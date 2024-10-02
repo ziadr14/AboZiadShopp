@@ -1,0 +1,143 @@
+
+header {
+    justify-content: space-between;
+    /* padding: 0 2.4rem; */
+    margin-top: 2.2rem;
+
+}
+
+header nav {
+    color: var(--colornav);
+    background-color: var(--bacgrundHeader);
+    padding: 0.77em 1.6em;
+    border-radius: 55px;
+    box-shadow: 2px 2px 20px var(--shado);
+}
+
+header ul {
+    gap: 16px;
+}
+
+header ul  li a {
+    color: var(--colornav);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+header ul  li a:hover {
+    opacity: 1;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+header button {
+    color: var(--colornav);
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+header button.bar , header button.moon {
+    transition: 0.3s;
+    background-color: var(--bacgrundHeader);
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+header button.bar {
+    display: none;
+}
+
+header .fixed {
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(40, 40, 48, 0.91);
+    z-index: 999;
+    backdrop-filter: blur(4px);
+}
+
+
+header .model {
+    animation: mymove 0.7s 1;
+    background-color: var(--socandry);
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 20px;
+    padding: 1em 2em;
+}
+
+header .model li {
+    border-bottom: 2px solid #3734349a;
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+
+header .model li:last-child {
+    border: none;
+}
+
+header .model li:first-child {
+    color: var(--colornav);
+
+    text-align: right;
+}
+
+header .icon-close:hover {
+    cursor: pointer;
+    font-size: 1.5rem;
+} 
+
+header .icon-close {
+    font-size: 1.3rem;
+    transition: 0.2s;
+}
+
+
+header .icon-close:hover  {
+    font-size: 1.5rem;
+    rotate: -180deg;
+    color: var(--orang);
+}
+
+
+@keyframes mymove {
+    0%   {scale: 0;}
+    60%   {scale: 1.2;}
+    100% {scale: 1;}
+} 
+
+
+@media (max-width: 600px) {
+    header {
+        padding: 0 0;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .model {
+        width: 75%;
+    }
+    header button.bar {
+        display: block;
+    }
+}
+
+
+@media (max-width: 300px ) {
+    header {
+        padding: 0 1rem;
+        margin-top: 1rem;
+    
+
+    }
+}

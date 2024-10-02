@@ -1,0 +1,118 @@
+main.flex {
+    gap: 2.64rem;
+    align-items: start;
+}
+main .left-Section {
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+main .left-Section button {
+    color: var(--colornav);
+    background-color: var(--bacgrundHeader);
+    width: 10rem;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.7rem 0;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+main .left-Section button:hover {
+    opacity: 1;
+}
+
+main .left-Section button.active {
+    opacity: 1;
+    border: 1px solid orange;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+}
+
+main section.right-section.flex {
+    /* flex-grow: 1; */
+    justify-content: center;
+    flex-wrap: wrap;
+
+    column-gap: 16px;
+    row-gap: 2rem;
+}
+
+.card {
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    border-radius: 5px;
+    transition: 0.3s;
+    background-image: linear-gradient( var(--bgLin),var(--bgLin-2));
+}
+
+.card:hover {
+    border: 1px solid var(--blue);
+    rotate: 1deg;
+    scale: 1.01;
+    cursor: pointer;
+}
+
+.card img {
+    height: 250px;
+    border-radius: 5px;
+}
+
+.card .box {
+    padding: 1rem 0.4rem;
+}
+
+.card .box .title {
+
+    color: var(--colornav);
+}
+
+.card .box .sub-title {
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.1rem;
+}
+
+
+
+
+.card a.link {
+    font-size: 0.9rem;
+    background-color: var(--shado);
+    color: var(--colornav);
+    border-radius: 10px;
+    width: 5.5rem;
+    padding: 6px 15px;
+    text-align: center;
+    margin-right: 12px;
+}
+
+
+
+/* =====================================
+    3- Responsive Design (media query)
+  ======================================== */
+
+@media (max-width: 600px) {
+    main.flex {
+        flex-direction: column;
+        gap: 2.64rem;
+        align-items: center;
+    }
+
+    main section.left-section.flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main section.left-section.flex button {
+        width: 7rem;
+        padding: 0.8rem 0;
+        font-size: 0.9rem;
+    }
+}

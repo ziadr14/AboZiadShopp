@@ -1,0 +1,66 @@
+
+.hero {
+    justify-content: space-between;
+}
+
+.hero .img {
+    height: 500px;
+}
+
+.hero img {
+    height: 400px ;
+    border-radius: 10px;
+}
+
+.hero .title h1 {
+    color: var(--colornav);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.hero .title p {
+    font-weight: 600;
+    color: var(--colornav);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .title button a {
+    transition: 0.5s;
+    background-color: var(--bacgrundHeader);
+    color: var(--colornav);
+    padding: 6px 16px;
+    border-radius: 10px;
+}
+
+.hero .title button a:hover {
+    background-color: gray;
+    
+
+}
+
+@media (max-width: 1130px) {
+    .hero img {
+        display: none;
+    }
+    .hero .title {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero .title {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .hero .title h1 {
+        font-size: 2rem;
+    }
+    .hero .title p {
+        font-size: 1.2rem;
+
+    }
+    
+}
